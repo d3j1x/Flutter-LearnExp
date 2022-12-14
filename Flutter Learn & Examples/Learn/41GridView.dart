@@ -19,48 +19,35 @@ class Test extends StatefulWidget {
   State<Test> createState() => _TestState();
 }
 
-
-
 class _TestState extends State<Test> {
-  List mobile = [
-    {"name": "s20 ultra", "screen": "6.2", "cpu": "8 core"},
-    {"name": "s30 ultra", "screen": "6.2", "cpu": "8 core"},
-    {"name": "s40 ultra", "screen": "6.2", "cpu": "8 core"},
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      drawer: Drawer(),
-      body: Container(
-        child: GridView(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2, mainAxisSpacing: 2, crossAxisSpacing: 2),
-          children: [
-            Container(
-              child: Text("Container One"),
-              height: 200,
-              color: Colors.blue,
-            ),
-            Container(
-              child: Text("Container One"),
-              height: 200,
-              color: Colors.red,
-            ),
-            Container(
-              child: Text("Container One"),
-              height: 200,
-              color: Colors.grey,
-            ),
-          ],
-        ),
-      ),
-    );
+        appBar: AppBar(),
+        drawer: Drawer(),
+        body: Container(
+            child: GridView(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2, mainAxisSpacing: 2, crossAxisSpacing: 2),
+                children: [
+              Container(
+                child: Text("Container One"),
+                height: 200,
+                color: Colors.blue,
+              ),
+              Container(
+                child: Text("Container One"),
+                height: 200,
+                color: Colors.red,
+              ),
+              Container(
+                child: Text("Container One"),
+                height: 200,
+                color: Colors.grey,
+              )
+            ])));
   }
 }
-
-
-
 
 class HomePage extends StatelessWidget {
   @override
@@ -85,4 +72,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
