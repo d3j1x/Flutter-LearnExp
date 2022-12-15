@@ -83,10 +83,11 @@ class Login extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 10),
+                    margin: EdgeInsets.symmetric(vertical: 30),
                     child: Row(
                       //mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
+                        Spacer(),
                         Column(
                           children: [
                             Icon(Icons.restaurant,
@@ -118,6 +119,7 @@ class Login extends StatelessWidget {
                             Text("2-4"),
                           ],
                         ),
+                        Spacer()
                       ],
                     ),
                   )
@@ -152,4 +154,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
