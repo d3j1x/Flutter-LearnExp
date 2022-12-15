@@ -98,7 +98,7 @@ class Login extends StatelessWidget {
                             Text("2-4"),
                           ],
                         ),
-                        Spacer(),
+                        Spacer(flex: 2),
                         Column(
                           children: [
                             Icon(Icons.category, color: Colors.green, size: 40),
@@ -108,7 +108,7 @@ class Login extends StatelessWidget {
                             Text("2-4"),
                           ],
                         ),
-                        Spacer(),
+                        Spacer(flex: 2),
                         Column(
                           children: [
                             Icon(Icons.emoji_food_beverage,
