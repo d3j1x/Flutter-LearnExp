@@ -3,3 +3,37 @@
 flutter pub get
 
 clipBehavior: Clip.none     ***overflow: Overflow.visible***  update
+
+
+
+flutter pub add flutter_launcher_icons
+flutter pub get
+flutter pub run flutter_launcher_icons
+
+
+flutter pub add flutter_native_splash
+flutter_native_splash:
+  color: "#42a5f5"
+  image: images/sm.png
+  
+  
+flutter pub run flutter_native_splash:create
+
+
+
+ $ flutter pub add geolocator
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 💪 You rock! 🤘🤩 👍 ✅
