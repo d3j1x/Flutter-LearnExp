@@ -30,7 +30,9 @@ flutter pub run flutter_native_splash:create
  
  
  
- 
+ flutter pub add image_picker
+ flutter clean
+ flutter pub get
  
  
  
