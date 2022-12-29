@@ -4,23 +4,11 @@ import 'package:get/get.dart';
 
 List<OnBoardingModel> onBoardingList = [
   OnBoardingModel(
-      title: "Choose Product",
-      body:
-          "We Have a 100k Product, Choose \n Your Product From Our \n E-commerce Shop",
-      image: AppImageAsset.onBoardingImageOne),
+      title: "2".tr, body: "3".tr, image: AppImageAsset.onBoardingImageOne),
   OnBoardingModel(
-      title: "Easy And Safe Payment",
-      body:
-          "Credit Card Companies \n Make Use Of The Latest \n Online Security Features,",
-      image: AppImageAsset.onBoardingImageTwo),
+      title: "4".tr, body: "5".tr, image: AppImageAsset.onBoardingImageTwo),
   OnBoardingModel(
-      title: "Track Your Order",
-      body:
-          "Order Tracking Allows You \n To Monitor All Of Your Online Orders \n And Shipments And To Communicate..",
-      image: AppImageAsset.onBoardingImageThree),
+      title: "6".tr, body: "7".tr, image: AppImageAsset.onBoardingImageThree),
   OnBoardingModel(
-      title: "Fast Delevery",
-      body:
-          "Fast Delivery Is An Option \n That Attracts New Customers, \n Builds Loyalty And Reduces Cart Abandonment.",
-      image: AppImageAsset.onBoardingImageFour),
+      title: "8".tr, body: "9".tr, image: AppImageAsset.onBoardingImageFour),
 ];

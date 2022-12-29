@@ -1,6 +1,7 @@
 import 'package:ecommerce_smrtapp/core/constant/routes.dart';
 import 'package:ecommerce_smrtapp/view/screen/auth/checkemail.dart';
 import 'package:ecommerce_smrtapp/view/screen/auth/forgetpassword/forgetpassword.dart';
+import 'package:ecommerce_smrtapp/view/screen/auth/verifycodesignup.dart';
 import 'package:ecommerce_smrtapp/view/screen/auth/login.dart';
 import 'package:ecommerce_smrtapp/view/screen/auth/forgetpassword/resetpassword.dart';
 import 'package:ecommerce_smrtapp/view/screen/auth/signup.dart';
@@ -20,6 +21,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoute.successResetPassword: (context) => const SuccessResetPassword(),
   AppRoute.successSignUp: (context) => const SuccesSignUp(),
   AppRoute.checkEmail: (context) => const CheckEmail(),
+  AppRoute.verifyCodeSignUp: (context) => const VerifyCodeSignUp(),
   // OnBoarding
   AppRoute.onBoarding: (context) => const OnBoarding(),
 };

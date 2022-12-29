@@ -1,4 +1,5 @@
 import 'package:ecommerce_smrtapp/controller/onboarding_controller.dart';
+import 'package:ecommerce_smrtapp/core/constant/color.dart';
 import 'package:ecommerce_smrtapp/data/datasource/static/static.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,23 +20,27 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                 //const SizedBox(height: 80),
                 Image.asset(
                   onBoardingList[i].image!,
-                  //width: 200,
+                  width: 300,
                   //height: 200,
                   //fit: BoxFit.fill,
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 50),
                 Text(
                   onBoardingList[i].title!,
-                  style: Theme.of(context).textTheme.headline1,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                      color: AppColor.black),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 20),
                 Container(
                     width: double.infinity,
                     alignment: Alignment.center,
                     child: Text(
                       onBoardingList[i].body!,
                       textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: const TextStyle(
+                          height: 2, color: AppColor.grey, fontSize: 18),
                     ))
               ],
             ));
