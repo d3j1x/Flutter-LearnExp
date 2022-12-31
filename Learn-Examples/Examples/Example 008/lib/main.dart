@@ -26,9 +26,10 @@ class MyApp extends StatelessWidget {
       title: 'Ecomerce SmrtMrkt',
       locale: controller.language,
       theme: controller.appTheme,
-      home: const Language(),
+      //home: const Language(),
       //home: const Test(),
-      routes: routes,
+      //routes: routes,
+      getPages: routes,
     );
   }
 }

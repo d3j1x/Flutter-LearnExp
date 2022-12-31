@@ -19,7 +19,7 @@ class SignUpControllerImp extends SignUpController {
   signUp() {
     if (formstate.currentState!.validate()) {
       Get.offNamed(AppRoute.verifyCodeSignUp);
-      Get.delete<SignUpControllerImp>();
+      //Get.delete<SignUpControllerImp>();
     } else {
       print("Not Valid");
     }

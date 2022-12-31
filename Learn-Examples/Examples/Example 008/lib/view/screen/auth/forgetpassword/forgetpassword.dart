@@ -1,4 +1,5 @@
 import 'package:ecommerce_smrtapp/controller/auth/forgetpassword_controller.dart';
+import 'package:ecommerce_smrtapp/core/functions/validinput.dart';
 import 'package:ecommerce_smrtapp/view/widget/auth/custombuttonauth.dart';
 import 'package:ecommerce_smrtapp/view/widget/auth/customtextbodyauth.dart';
 import 'package:ecommerce_smrtapp/view/widget/auth/customtextformauth.dart';
@@ -28,32 +29,37 @@ class ForgetPassword extends StatelessWidget {
         ),
         body: Container(
             padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 35),
-            child: ListView(
-              children: [
-                const CustomTextTiltleAuth(text: "Check Email"),
-                const SizedBox(height: 10),
-                const CustomTextBodyAuth(
-                    text:
-                        "Please Enter Your Email Adress To Recive A verification code"),
-                CustomTextFormAuth(
-                  isNumber: false,
-                  valid: (val) {},
-                  mycontroller: controller.email,
-                  hinttext: "Enter Your Email",
-                  iconData: Icons.email_outlined,
-                  labeltext: "Email",
-                  //mycontroller: ,
-                ),
-                CustomButtonAuth(
-                  text: "Check",
-                  onPressed: () {
-                    controller.goToVerifyCode();
-                  },
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-              ],
+            child: Form(
+              key: controller.formstate,
+              child: ListView(
+                children: [
+                  const CustomTextTiltleAuth(text: "Check Email"),
+                  const SizedBox(height: 10),
+                  const CustomTextBodyAuth(
+                      text:
+                          "Please Enter Your Email Adress To Recive A verification code"),
+                  CustomTextFormAuth(
+                    isNumber: false,
+                    valid: (val) {
+                      return validInput(val!, 5, 100, "email");
+                    },
+                    mycontroller: controller.email,
+                    hinttext: "Enter Your Email",
+                    iconData: Icons.email_outlined,
+                    labeltext: "Email",
+                    //mycontroller: ,
+                  ),
+                  CustomButtonAuth(
+                    text: "Check",
+                    onPressed: () {
+                      controller.goToVerifyCode();
+                    },
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
             )));
   }
 }
